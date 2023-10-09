@@ -10,8 +10,11 @@
         body{
             font-size: 22px;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
-            color: white;
+            background-color:#E2D1F9;
+            color: #317773;
+        }
+        h1{
+            text-align: center;
         }
         #wrap{
             width: 550px;
@@ -55,6 +58,11 @@
             width: 100px;
             margin-left: 550px;
         }
+        #submitbutton:hover{  
+            width: 80px;
+            margin-left: 550px;
+            background-color: gray;
+        }
         #errors{
             color: red;
             font-size: 90%;
@@ -67,6 +75,7 @@
     </style>
 </head>
 <body>
+    <h1>Register Now</h1>
     <div id="errors"></div>
     <div id="success"></div>
     <div id="wrap">
@@ -115,7 +124,7 @@
             }
     
             if ($("#password").val() == "") {
-                missingfield += "<p>Password not entered.</p>";
+                missingfield += "<p>Password not Entered.</p>";
             }
     
             if (isEmail($("#Email").val()) == false) {
